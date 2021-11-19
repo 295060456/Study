@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ViewAnimationActivity"
+    style="@style/Animation">
+
+    <LinearLayout
+        android:background="@drawable/edge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/viewAlphaAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Alpha"
+            style="@style/AnimationTextView" />
+
+        <TextView
+            android:id="@+id/viewScaleAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:text="Scale"
+            style="@style/AnimationTextView" />
+
+        <TextView
+            android:id="@+id/viewTranslateAnimation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Translate"
+            style="@style/AnimationTextView" />
+
+    </LinearLayout>
+
+</ScrollView>
